@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <title>Alexander E-commerce</title>
+   
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  </head>
+  
+  <style>
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transform: scale(1);
+      box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+    }
+    
+    .button2 {background-color: #008CBA;} /* Blue */
+    .button3 {background-color: #f44336;} /* Red */ 
+    .button4 {background-color: #dc610f; color: black;} /* Gray */ 
+  
+  button:disabled,
+  button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+    
+  .button:hover {
+    /* :hover 代表滑鼠移到元素上時的狀態 */ 
+    transform: scale(1.05);
+  }
+
+  .button:active {
+    /* :active是滑鼠點擊元素的狀態 */
+    transform: scale(1);
+    box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+  }
+
+    .container{
+      background-size:cover;
+      background-image: url("https://img.onl/no9Icp");
+      }
+    .tupian{ width:200px; height:200px; margin:auto; } 
+    .tupian img{width:100px; height:100px; display: none } 
+    
+    a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  </style>
+
+  <body align="center" class="container" >
+    <h1><font color="white">Alexander E-commerce world</font></h1>
+
+    <button class="button button4" id="btn-login">Metamask Login</button>
+    <button class="button" id="btn-logout">Logout</button>
+    
+    <h1 id="nft"></h1>
+    <button class="button button3" id="btn-nft" disabled>Mint NFT</button>
+    
+    
+    <div class="tupian" > 
+      <img id="tokenid" /> 
+    </div> 
+    <h2 id="welcome" style="display:none" ><font id="welcome" color="white"> Welcome !</font> 
+      <a href="https://www.udemy.com/course/blockchaintoken/?instructorPreviewMode=guest" style="color: red">click here</a> <font color="white">to the world</font>
+    </h2>
+    
+    
+     
+    
+    
+    <script type="text/javascript" src="./1.js"></script>
+    
+  </body>
+
+</html>

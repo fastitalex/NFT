@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>代幣管理系統</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script> 
+  </head>
+
+
+  <style type="text/css">
+    #B ul li {
+      display:inline;
+    }
+  </style>
+
+  <body>
+    <h1>代幣管理系統</h1>
+
+    <button class="login">連接metamask</button>
+    <!--button class="logout">登出</button-->
+    
+    
+    <p id ="identification"></p>
+    <hr/>
+    <div id="B">
+      <ul>
+      <li id="tokenname">Token</li>
+      <li id="total">總供應量：</li>
+      <li id="totalsupply">0</li>
+      </ul>
+    </div>
+ 
+    <button class="btnBurn" disabled>燒毀 Token</button> 請輸入數量(含精準度): <input id="burnAmount" />
+    <p></p>
+    <button class="btnMint" disabled>鑄造 Token</button> 請輸入數量(含精準度): <input id="mintAmount" />
+    <hr/>
+    <button class="btnSwap" disabled>兌換 Token</button> 請輸入eth數量: <input id="swapAmount" /> (1 eth = 1000 AET) 
+
+    <script type="text/javascript" src="./erc20.js"></script>
+    
+  </body>
+
+</html>
